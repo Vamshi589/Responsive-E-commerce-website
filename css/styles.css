@@ -1,0 +1,520 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+}
+
+.nav1{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 2px 0px 3px grey;
+    text-align: center;
+}
+.nav1 .left{
+    flex-basis: 50%;
+    letter-spacing: 2px;
+}
+
+.nav1 .left a{
+    text-decoration: none;
+    color: indianred;
+    font-weight: bold;
+}
+
+.right{
+    flex-basis: 50%;
+}
+
+.right i{
+    font-size: 20px;
+    margin: 0px 15px;
+    background-color: #055052;
+    color: whitesmoke;
+    padding: 8px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.nav1 .right i:hover{
+    transform:rotate(50deg);
+}
+
+.nav2{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.nav2 .nav2-left, .nav2 .nav2-centre, .nav2 .nav2-right{
+    margin: auto;
+    flex-basis: 30%;
+    cursor: pointer;
+}
+
+.nav2 .nav2-left i{
+    margin-left: 15px;
+}
+
+.nav2 .nav2-centre h1{
+    color: indianred;
+    font-weight: bold;
+    font-size: 2rem;
+    letter-spacing: 5px;
+}
+
+.nav2 .nav2-centre span{
+    color: black;
+}
+
+.nav2-centre p{
+    margin-top: 5px;
+    font-size: 15px;
+    color: grey;
+}
+
+.nav2 .nav2-right i{
+    margin: 0px 5px;
+}
+
+.nav-3{
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+}
+
+.nav-3 ul{
+    list-style: none;
+    text-align: center;
+   
+}
+.nav-3 ul li{
+    display: inline-block;
+    width: 150px;
+    position: relative;
+    z-index: 99;
+}
+.nav-3 ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    display: block;
+}
+.nav-3 ul li a:hover{
+    color: indianred;
+}
+
+.nav-3 ul li a i{
+    letter-spacing: 6px;
+    color: indianred;
+}
+
+.nav-3 ul ul{
+    position: absolute;
+    top: 70px;
+    left: 0;
+    display: none;
+}
+
+.nav-3 ul ul li{
+    background-color: white;
+    border-bottom: 1px solid indianred;
+}
+
+.nav-3 ul li:hover>ul{
+    display: block;
+}
+
+.container{
+    width: 100%;
+    height: 60vh;
+    background: linear-gradient(to right,rgba(0,0,0,1) 20%,rgba(255,255,255,0.2)),
+                url("/images/bgcontainer.jpg");
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+.container-text{
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    color: yellow;
+    text-align: center;
+    padding: 10px;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    font-family: 'Akaya Kanadaka', cursive;
+}
+
+.container-text button{
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background-color:#091353;
+    color: white;
+    margin: 20px 0px;
+    border-radius: 20px;
+}
+
+.latest{
+    padding: 50px 100px;
+    text-align: center;
+}
+
+.product-intro h1{
+    color: indianred;
+    font-size: 2rem;
+    font-weight: bolder;
+    letter-spacing: 0.2rem;
+}
+
+.product-intro h1 span{
+    color: black;
+}
+
+.product-intro p{
+    color: grey;
+    margin: 15px 0;
+}
+
+.card-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 4rem 0;
+    cursor: pointer;
+}
+.card-container .card{
+    flex-basis: 20%;
+    padding: 0.8rem;
+    position: relative;
+}
+.card img{
+    width: 100%;
+    transition: 0.5s ease-in-out;
+}
+.card i{
+    color: goldenrod;
+    margin: 15px 0;
+}
+.card button{
+    color: white;
+    background-color: black;
+    margin-top: 15px;
+    border: none;
+    outline: none;
+    padding: 5px 20px;
+}
+.card:hover img, card:hover h1{
+    width: 80%;
+    color: black;
+}
+/* .card::before{
+    content: '30% OFF';
+    width: 25%;
+    height: 25px;
+    line-height: 25px;
+    color: white; 
+    position: relative;
+    bottom: 5px;
+    right: 70px;
+    background-color: indianred;
+    padding: 0px 4px;
+} */
+
+.trends .product-intro{
+    text-align: center;
+}
+
+.trends{
+    padding: 50px 100px;
+    background-color: rgba(0,0,0,0.1);
+}
+
+.trends .swiper {
+    width: 100%;
+   padding: 50px;
+  }
+
+  .trends .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 500px;
+    height: 500px;
+  }
+  .trends .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  footer{
+      background-color:rgba(0,0,0,1);
+      color: white;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      text-align: center;
+      padding: 2rem;
+  }
+
+  footer div{
+      flex-basis: 30%;
+  }
+
+  footer div h1{
+      color: indianred;
+      letter-spacing: 0.5rem;
+  }
+  footer div h1 span{
+      color: white;
+  }
+
+footer p{
+    font-size: 1rem;
+    padding: 12px;
+}
+
+footer i{
+    margin: 0px 8px;
+}
+footer p span{
+    color: indianred;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+footer hr{
+    width: 65%;
+    position: relative;
+    top: 10px;
+    left: 30px;
+   margin: 10px 45px;
+}
+
+.sidenav{
+    display: none;
+}
+#menubar{
+    display: none;
+}
+
+@media only screen and (max-width:375px){
+
+#sidenav{
+    display: block;
+}
+#menubar{
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0%, -50%);
+    z-index: 99;
+    background-color: indianred;
+    color: white;
+    font-size: 2rem;
+    padding: 20px 10px;
+    animation: animate 5s ease infinite;
+}
+
+@keyframes animate {
+    0%{
+        background-color: black;
+    }
+    100%{
+        background-color: indianred;
+    }
+}
+
+#sidenav{
+    width: 0px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgb(10, 5, 27);
+    padding-top: 70px; 
+    display: block;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+
+#sidenav ul{
+    list-style: none;
+
+    
+   
+}
+#sidenav ul li{
+    display: block;
+    width: 200px;
+    position: relative;
+    z-index: 99;
+    margin: 10px 20px;
+}
+#sidenav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    display: block;
+    font-size: 20px;
+    padding: 10px 20px;
+}
+#sidenav ul li a:hover{
+    color: indianred;
+}
+
+#sidenav ul li i{
+    color: white;
+    margin: 0px 5px;
+}
+
+/*  */
+
+#sidenav ul ul{
+    position: absolute;
+    top: 70px;
+    left: 0;
+    display: none;
+}
+
+#sidenav ul ul li{
+    
+    border-bottom: 1px solid indianred;
+}
+
+#sidenav ul li:hover>ul{
+    display: block;
+}
+
+
+ 
+    .nav1{
+        position: relative;
+        z-index: 1;
+        background-color: white;
+        width: 100%;
+        height: 95px;
+        letter-spacing: 1px;
+        font-size: 12px;
+    }
+
+    .right i{
+        font-size: 12px;
+        margin: 0px 2px;
+    }
+
+    .nav2{
+        width: 100%;
+        height: 100px;
+    }
+    
+    .nav2 .nav2-left i{
+        margin-left: 2px;
+        font-size: 15px;
+    }
+    
+    .nav2 .nav2-centre h1{
+       
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+    
+    .nav2-centre p{
+        margin-top: 4px;
+        font-size: 10px;
+        color: grey;
+    }
+    
+    .nav2 .nav2-right i{
+        margin: 0px 3px;
+    }
+
+    .nav-3{
+        display: none;
+    }
+
+    .container{
+        background-attachment: fixed;
+    }
+
+    .container-text{
+        width: 350px;
+        position: absolute;
+        top: 25%;
+        right: 10%;
+        color: yellow;
+        text-align: center;
+        font-size: 1.5rem;
+}
+
+
+
+.latest{
+    padding: 0px 20px;
+    
+}
+
+.card-container{
+    
+    margin: 1.5rem 15px;
+    display: block;
+width: 100%;
+   
+}
+.card-container .card{ 
+
+
+    flex-basis: 100%;
+   padding: 00.5rem;
+    text-align: center;
+  position: relative;
+}
+.card img{
+    width: 100%;
+    transition: 0.5s ease-in-out;
+}
+.card i{
+    color: goldenrod;
+    margin: 1px 0;
+}
+.card button{
+    color: white;
+    background-color: black;
+    margin-top: 15px;
+    border: none;
+    outline: none;
+    padding: 5px 20px;
+}
+
+/* CONTINUE TO */
+
+
+
+  footer div{
+    flex-basis: 70%;
+    margin: 8px 0px;
+}
+
+}
