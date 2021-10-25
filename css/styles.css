@@ -146,7 +146,7 @@ header{
     width: 100%;
     height: 60vh;
     background: linear-gradient(to right,rgba(0,0,0,1) 20%,rgba(255,255,255,0.2)),
-                url("./images/bgcontainer.jpg");
+                url("../images/bgcontainer.jpg");
     background-size: cover;
     background-position: top;
     position: relative;
